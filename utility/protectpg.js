@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken")
 I'm Assuming that we're conneted data base the mode name User
 */
 
-const User = require("../../database/datas");
+// const User = require("../../database/datas");
 
 
 /* 
