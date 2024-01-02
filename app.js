@@ -5,11 +5,13 @@ const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 5000;
 const Alexa = require("ask-sdk-core");
+const router = require("./route/route");
 
 app.use(express.json());
 app.use(cors());
 app.use("/nizams", require("./nizams"));
 app.use("/keventers", require("./keventers"));
+app.use("/api", router)
 app.get("/", (req, res) => {
   res.json("this is kevenetersdashboard");
 });
